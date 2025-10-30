@@ -7,7 +7,7 @@ interface ApiResponse<T = any> {
   title?: string;
 }
 
-const API_BASE = (import.meta as any).env?.VITE_API_BASE;
+const API_BASE = (import.meta as any).env?.VITE_API_BASE || `https://project-manager-assgn-pathloack.onrender.com/api`;
 console.log("API_BASE: " + API_BASE);
 
 class ApiService {
