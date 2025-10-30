@@ -7,7 +7,7 @@ interface ApiResponse<T = any> {
   title?: string;
 }
 
-const API_BASE = (import.meta as any).env?.VITE_API_BASE || 'http://localhost:5090/api';
+const API_BASE = (import.meta as any).env?.VITE_API_BASE;
 console.log("API_BASE: " + API_BASE);
 
 class ApiService {
