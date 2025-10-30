@@ -72,7 +72,7 @@ export const AuthPage: React.FC = () => {
     }
   };
 
-  // ✅ Allow Enter key to submit
+ 
   const handleKeyPress = (e: React.KeyboardEvent<HTMLDivElement>) => {
     if (e.key === 'Enter') handleSubmit();
   };
@@ -90,7 +90,7 @@ export const AuthPage: React.FC = () => {
         {apiError && <Alert message={apiError} onClose={() => setApiError('')} />}
 
         <div onKeyPress={handleKeyPress}>
-          {/* ✅ Username for both login and signup */}
+
           <Input
             label="Username"
             type="text"
@@ -100,7 +100,7 @@ export const AuthPage: React.FC = () => {
             placeholder="yourusername"
           />
 
-          {/* ✅ Email only for signup */}
+
           {!isLogin && (
             <Input
               label="Email"
